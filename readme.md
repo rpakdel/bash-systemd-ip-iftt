@@ -14,7 +14,7 @@ The goal of this script is to have a headless Linux server send its local IP add
 ## Configure to run when network is available
 
 * Copy the provided systemd service to /etc/systemd/system
-* Update the service file to point to the bash script
-* Run (sudo) systemd start alarm-online and ensure it works correctly
+* Update the service file to point to the bash script.
+* Run (sudo) systemd start alarm-online and ensure it works correctly.
 * Run (sudo) systemd enable alarm-online
-* Reboot and ensure 
+* Reboot and wait for the notification.
