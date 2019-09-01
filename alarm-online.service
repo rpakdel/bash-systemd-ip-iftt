@@ -1,0 +1,11 @@
+[Unit]
+Description=Alarm online
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/root/alarm-online
+
+[Install]
+WantedBy=multi-user.target

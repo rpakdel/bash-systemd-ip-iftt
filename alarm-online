@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ipaddr=`hostname -i`
+value="{ \"value1\":\"$ipaddr\" }"
+#echo $value
+curl -X POST -H "Content-Type: application/json" -d "$value" https://maker.ifttt.com/trigger/alarm-online/with/key/<REPLACE WITH PRIVATE KEY>
+
